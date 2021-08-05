@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Chat</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="chat">
+            <div class="header">
+                <div class="header-items">
+                    <img src="./img/olga.png" alt="photo">
+                    <div class="text-info">
+                        <h1>Токсикова Ольга</h1>
+                        <p class="country">Днепропетровск</p>
+                    </div>
+                </div>
+                <div class="header-items right">
+                    <div class="rating-result">
+                        <i id="first" class="fas fa-star"></i>
+                        <i id="second" class="fas fa-star"></i>
+                        <i id="third" class="fas fa-star"></i>
+                        <i id="fourth" class="fas fa-star"></i>
+                        <i id="fifth" class="fas fa-star"></i>
+
+                    </div>
+                    <button type="button" class="close-btn">
+                        <img src="./img/close.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <hr>
+            <div class="messages">
+                <div class="mycustom-scroll" data-mcs-theme="3d-dark" style="margin: 10px 0;">
+                    <div class="message-block">
+                        <div class="message">
+
+                            <img src="./img/olga.png" alt="">
+                            <div class="text-message">
+
+                                Где взять на прокат вечернее красивое платье? А еще лучше дизайнерское!
+                                Предстоит участие в
+                                <a class="event" href="#">мероприятии</a>, где все
+                                гости будут наверняка одеты в наряды "от кутюр", а у меня со средствами туговато, да и
+                                жалко
+                                на
+                                один раз такие деньжищи
+                                отваливать. Мне
+
+                            </div>
+                            <div class="time-sending">
+                                вчера в 10.45
+                            </div>
+                        </div>
+                        <div class="message">
+                            <div class="gray-fon">
+                                <img src="./img/girl.png" alt="">
+                                <div class="text-message">
+
+                                    Поисковик вам в помощь! Но цена примерно в половину стоимости платья.
+
+                                </div>
+                                <div class="time-sending">
+                                    вчера в 12.45
+                                </div>
+                            </div>
+                        </div>
+                        <div class="message">
+                            <img src="./img/olga.png" alt="">
+                            <div class="text-message">
+
+                                Где взять на прокат вечернее красивое платье? А еще лучше дизайнерское!
+                                Предстоит участие в
+                                <a class="event" href="#">мероприятии</a>, где все
+                                гости будут наверняка одеты в наряды "от кутюр", а у меня со средствами туговатo
+
+                            </div>
+                            <div class="time-sending">
+                                сегодня в 8.45
+                            </div>
+                        </div>
+
+                        <div class="message">
+                            <div class="gray-fon">
+                                <img src="./img/girl.png" alt="">
+                                <div class="text-message">
+
+                                    Поисковик вам в помощь! Но цена примерно в половину стоимости платья.
+
+                                </div>
+                                <div class="time-sending">
+                                    сегодня в 10.45
+                                </div>
+                            </div>
+                        </div>
+                        <div class="message">
+                            <img src="./img/olga.png" alt="">
+                            <div class="text-message">
+
+                                Где взять на прокат вечернее красивое платье? А еще лучше дизайнерское!
+                                Предстоит участие в
+                                <a class="event" href="#">мероприятии</a>, где все
+                                гости будут наверняка одеты в наряды "от кутюр", а у меня со средствами туговатo
+
+                            </div>
+                            <div class="time-sending">
+                                сегодня в 17.45
+                            </div>
+                        </div>
+                        <div class="message">
+                            <div class="gray-fon">
+                                <img src="./img/girl.png" alt="">
+                                <div class="text-message">
+
+                                    Поисковик вам в помощь! Но цена примерно в половину стоимости платья.
+
+                                </div>
+                                <div class="time-sending">
+                                    18.45
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="send-message">
+                <img src="./img/message.png" alt="">
+                <form class="send-new" action="#">
+                    <textarea></textarea>
+                    <button class="send" type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.min.css">
+    <script src="//cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="./scroll.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

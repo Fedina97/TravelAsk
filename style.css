@@ -1,0 +1,254 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.chat {
+  width: 600px;
+  height: 560px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 1px 0px 10px 2px #34383f45;
+          box-shadow: 1px 0px 10px 2px #34383f45;
+  border-radius: 6px;
+}
+
+.chat .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+}
+
+.chat .header::before {
+  content: '';
+  position: absolute;
+  background: url(img/line_full.png) center center/cover no-repeat;
+  height: 11px;
+  width: 100%;
+  top: 0;
+  right: 0;
+}
+
+.chat .header .header-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 28px 0 28px 30px;
+}
+
+.chat .header .header-items img {
+  margin-right: 14px;
+}
+
+.chat .header .header-items .text-info h1 {
+  font-family: 'PT Sans';
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 24px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.chat .header .header-items .text-info .country {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  font-family: Arial;
+}
+
+.chat .header .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.chat .header .right .rating-result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.chat .header .right .rating-result i {
+  font-size: 16px;
+  cursor: pointer;
+  color: gray;
+}
+
+.chat .header .right .rating-result .golden {
+  color: gold;
+}
+
+.chat .header .right .close-btn {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.chat .header .right .close-btn img {
+  width: 23px;
+  margin: 0 7px 0 15px;
+}
+
+hr {
+  margin: 0;
+}
+
+.messages {
+  max-height: 311px;
+}
+
+.messages .message:first-child {
+  margin-top: 5px;
+}
+
+.messages .message {
+  padding-left: 30px;
+  padding-right: 36px;
+  width: 540px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 18px;
+}
+
+.messages .message img {
+  padding-left: 15px;
+  width: 31px;
+  height: 31px;
+}
+
+.messages .message p {
+  margin: 0;
+}
+
+.messages .message .text-message {
+  width: 364px;
+  margin-left: 14px;
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #3e3e3e;
+}
+
+.messages .message .time-sending {
+  padding-right: 10px;
+  margin-right: 0;
+  margin-left: auto;
+  font-family: Arial;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #7f7f7f;
+}
+
+.messages .message .event {
+  font-weight: 700;
+  text-decoration: underline;
+  color: #3399ff;
+}
+
+.messages .message:last-child {
+  margin-bottom: 5px;
+}
+
+.messages .gray-fon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 9px;
+  width: 540px;
+  height: 45px;
+  background-color: #f0ecf07b;
+  border-radius: 3px;
+}
+
+.messages .blue-fon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 9px;
+  width: 540px;
+  height: 45px;
+  border-radius: 3px;
+  background: #bbd8f58b;
+}
+
+.send-message {
+  background: #e9f2fa;
+  height: 120px;
+  border-radius: 0 0 6px 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 30px;
+}
+
+.send-message img {
+  width: 45px;
+  margin-right: 14px;
+  height: 45px;
+  background-color: #ff7b7a;
+  border-radius: 3px;
+}
+
+.send-message form {
+  margin: 0;
+  padding: 0;
+}
+
+.send-message textarea {
+  width: 481px;
+  height: 77px;
+  background-color: #ffffff;
+  border: 1px solid rgba(85, 85, 85, 0.37);
+  border-radius: 3px;
+  resize: none;
+}
+
+.send-message button {
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  margin-top: 7px;
+  margin-bottom: 9px;
+  color: #3e3e3e;
+}
+
+.mCSB_outside + .mCSB_scrollTools {
+  right: 0;
+}
+/*# sourceMappingURL=style.css.map */
