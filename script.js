@@ -6,7 +6,8 @@ iElems.forEach(function (i) {
     i.addEventListener('mouseout', function (event) {
         removeGoldenClass(event.target);
     });
-})
+});
+
 
 function addGoldenClass(i) {
     i.classList.add('golden');
@@ -24,12 +25,24 @@ function removeGoldenClass(i) {
     }
 }
 
+
 let textarea = document.querySelector('textarea');
 let form = document.querySelector('.send-new');
 let btn = document.querySelector('.send');
 let message = document.querySelector('.message-block');
+
+//время отправки с нулями
+
 let date = new Date();
-let time = date.getHours() + "." + date.getMinutes();
+let hours = date.getHours();
+let minutes = date.getMinutes();
+
+if (hours < 10) hours = "0" + hours;
+if (minutes < 10) minutes = "0" + minutes;
+
+let time = "" + hours + "." + minutes;
+
+//отправка сообщения
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
